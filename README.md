@@ -1,4 +1,5 @@
 Authors
+
 * Frank Denzer
 
 This is an Android application.
