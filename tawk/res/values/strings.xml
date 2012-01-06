@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">tawk</string>
+    <string name="user_name">User:</string>
+    <string name="from_start_to_user_login">Edit profile</string>
+    <string name="from_start_to_view_messages">Read messages</string><string name="from_start_to_create_message">Create new message</string>
+    
+    <string name="outbox">Outbox:</string><string name="autosend">autosend</string><string name="retry_sending">retry sending</string><string name="menu_close">Close</string><string name="reset_data">Reset</string><string name="login_name">Login name</string>
+    <string name="enter_password">Password</string><string name="login_hint">your user name</string><string name="save_password">save it</string><string name="password_hint">your password</string><string name="property1">Property 1:</string><string name="property1_hint">avatar</string><string name="property2">Property 2:</string><string name="property2_hint">age</string><string name="from_user_login_to_start_abort">cancel login changes</string><string name="from_user_login_to_start_try">submit</string>
+    <string name="chars_remaining">Characters left:</string><string name="from_create_message_to_view_messages">send</string><string name="from_create_messages_to_start">cancel message</string>
+    <string name="search_messages">search messages for …</string><string name="default_list_more">list 20 more</string><string name="user_icon">user icon</string>
+    <string name="from_view_messages_to_create_message">send new</string>
+    <string name="menu_refresh">Refresh</string>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</resources>

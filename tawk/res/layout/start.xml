@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/current_user_name_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/start_to_user_login_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goToUserLogin"
+            android:text="@string/from_start_to_user_login" />
+
+        <Button
+            android:id="@+id/start_to_view_messages_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goToViewMessages"
+            android:text="@string/from_start_to_view_messages"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/start_to_create_message_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goToCreateMessage"
+            android:text="@string/from_start_to_create_message"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/outbox_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/outbox"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/outbox_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/autosend_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/autosend"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/try_send_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="trySend"
+            android:text="@string/retry_sending"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</ScrollView>
