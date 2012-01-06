@@ -9,7 +9,6 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public final class CreateMessage extends Activity {
 
@@ -27,7 +26,7 @@ public final class CreateMessage extends Activity {
 	EditText newMessage;
 	TextView username, characterCount;
 
-	// TODO: this should be in a back end, not UI, file
+	// TODO: this should not be in the UI but back end
 	final int MAX_CHARACTER_COUNT = 300;
 
 	/** Called when the activity is first created. */
@@ -51,16 +50,9 @@ public final class CreateMessage extends Activity {
 
 			public void onTextChanged(CharSequence s, int start, int before,
 					int count) {
-				// This sets a TextView to the current length
+				// This sets a TextView to show the available character count
 				characterCount.setText(String.valueOf(MAX_CHARACTER_COUNT
 						- s.length()));
-				if (s.length() > 300) {
-					Toast.makeText(getApplicationContext(), "Message too long",
-							Toast.LENGTH_SHORT).show();
-					// TODO: append to toast ", will be split", add
-					// functionality: auto
-					// split long messages
-				}
 			}
 
 			public void afterTextChanged(Editable s) {
@@ -72,11 +64,11 @@ public final class CreateMessage extends Activity {
 
 		ed = dataStore.edit();
 		ed.putString(MESSAGE, newMessage.getText().toString());
-		
+
 		// ++message count (add one before storing it)
-		ed.putInt(MESSAGE_COUNT, dataStore.getInt(MESSAGE_COUNT, 0) + 1 );
-		
-		// store time (as milliseconds after 1970) to message 
+		ed.putInt(MESSAGE_COUNT, dataStore.getInt(MESSAGE_COUNT, 0) + 1);
+
+		// store time (as milliseconds after 1970) to message
 		ed.putLong(MESSAGE_TIME, System.currentTimeMillis());
 		ed.commit();
 

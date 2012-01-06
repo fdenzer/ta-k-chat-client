@@ -11,6 +11,9 @@ import android.graphics.Matrix;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.Editable;
+import android.text.method.KeyListener;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -82,6 +85,39 @@ public final class UserLogin extends Activity {
 		if (dataStore.getString(PROPERTY_2, "") != "") {
 			property2.setText((dataStore.getString(PROPERTY_2, "")));
 		}
+		
+		//TODO: attach to userName
+		// watch for illegal characters entered in user name field
+		KeyListener k = new KeyListener() {
+			
+			
+			public boolean onKeyUp(View view, Editable text, int keyCode, KeyEvent event) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+			
+			public boolean onKeyOther(View view, Editable text, KeyEvent event) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+			
+			public boolean onKeyDown(View view, Editable text, int keyCode,
+					KeyEvent event) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+			
+			public int getInputType() {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+			
+			public void clearMetaKeyState(View view, Editable content, int states) {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+		
 
 	}
 	

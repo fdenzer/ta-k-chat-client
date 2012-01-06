@@ -63,7 +63,7 @@ public final class Start extends Activity {
 		// load user name, messages and password
 		dataStore = getSharedPreferences(DATA_STORE, MODE_PRIVATE);
 
-		// NEVER load the non-permanent temp-variables from shared preferences
+		// NEVER load the non-permanent "temp"-variables from shared preferences
 		tempUserName = tempPassword = "";
 		useTemp = reseted = false;
 
@@ -77,6 +77,7 @@ public final class Start extends Activity {
 			showItems(dataStore.getString(USER_NAME, ""));
 			// TODO: import password and properties as they are needed for
 			// messages
+			
 		} else {
 			// actually, only useful if reseted == false, but no harm done if
 			// overdone, since if() isn't free of overhead either
@@ -86,6 +87,23 @@ public final class Start extends Activity {
 		Integer sendThese = (Integer) dataStore.getInt(MESSAGE_COUNT, 0);
 		outboxNumber.setText(sendThese.toString());
 		super.onPause();
+	}
+	
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		outState.putString(USER_NAME, tempUserName);
+		// TODO: save tmp password and properties
+		
+		super.onSaveInstanceState(outState);
+	}
+	
+	@Override
+	protected void onRestoreInstanceState(Bundle savedInstanceState) {
+		tempUserName = savedInstanceState.getString(USER_NAME);
+		showItems(tempUserName);
+		// TODO: restore tmp password and properties
+		
+		super.onRestoreInstanceState(savedInstanceState);
 	}
 
 	// Called when the menu is opened for the very first time
@@ -112,7 +130,6 @@ public final class Start extends Activity {
 			ed.commit();
 
 			// restore look of new start
-
 			// hideItems(); // hide- and showItems don't work
 
 			reseted = true;
