@@ -88,35 +88,35 @@ public final class UserLogin extends Activity {
 		
 		//TODO: attach to userName
 		// watch for illegal characters entered in user name field
-		KeyListener k = new KeyListener() {
-			
-			
-			public boolean onKeyUp(View view, Editable text, int keyCode, KeyEvent event) {
-				// TODO Auto-generated method stub
-				return false;
-			}
-			
-			public boolean onKeyOther(View view, Editable text, KeyEvent event) {
-				// TODO Auto-generated method stub
-				return false;
-			}
-			
-			public boolean onKeyDown(View view, Editable text, int keyCode,
-					KeyEvent event) {
-				// TODO Auto-generated method stub
-				return false;
-			}
-			
-			public int getInputType() {
-				// TODO Auto-generated method stub
-				return 0;
-			}
-			
-			public void clearMetaKeyState(View view, Editable content, int states) {
-				// TODO Auto-generated method stub
-				
-			}
-		};
+//		KeyListener k = new KeyListener() {
+//			
+//			
+//			public boolean onKeyUp(View view, Editable text, int keyCode, KeyEvent event) {
+//				// TODO Auto-generated method stub
+//				return false;
+//			}
+//			
+//			public boolean onKeyOther(View view, Editable text, KeyEvent event) {
+//				// TODO Auto-generated method stub
+//				return false;
+//			}
+//			
+//			public boolean onKeyDown(View view, Editable text, int keyCode,
+//					KeyEvent event) {
+//				// TODO Auto-generated method stub
+//				return false;
+//			}
+//			
+//			public int getInputType() {
+//				// TODO Auto-generated method stub
+//				return 0;
+//			}
+//			
+//			public void clearMetaKeyState(View view, Editable content, int states) {
+//				// TODO Auto-generated method stub
+//				
+//			}
+//		};
 		
 
 	}

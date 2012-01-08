@@ -17,6 +17,12 @@
         android:layout_marginLeft="6dp"
         android:text="John Doe" />
 
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="2dp"
+        android:background="#777" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,6 +44,12 @@
         android:layout_marginLeft="6dp"
         android:text="image link" />
 
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="2dp"
+        android:background="#777" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,6 +63,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="6dp"
         android:text="s.th. like age is 28" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="2dp"
+        android:background="#777" />
 
     <Button
         android:id="@+id/cancel_dialog_button"

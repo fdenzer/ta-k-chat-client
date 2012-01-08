@@ -37,6 +37,11 @@
             android:onClick="listMore"
             android:text="@string/default_list_more" />
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#777" />
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -79,6 +84,11 @@
             </LinearLayout>
         </LinearLayout>
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#777" />
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -120,6 +130,11 @@
                 </TextView>
             </LinearLayout>
         </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#777" />
 
         <Button
             android:id="@+id/view_messages_to_create_message_button"

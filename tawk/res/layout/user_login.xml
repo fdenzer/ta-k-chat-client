@@ -32,6 +32,11 @@
             <requestFocus />
         </EditText>
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#777" />
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -65,6 +70,11 @@
             android:hint="@string/password_hint"
             android:inputType="textPassword" />
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#777" />
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -90,8 +100,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dp"
-                    android:text="@string/property1_hint"
-                    android:onClick="selectImage" />
+                    android:onClick="selectImage"
+                    android:text="@string/property1_hint" />
             </LinearLayout>
 
             <ImageView
@@ -105,6 +115,11 @@
                 android:onClick="selectImage"
                 android:src="@drawable/ic_launcher" />
         </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#777" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -133,6 +148,11 @@
                 android:hint="@string/property2_hint"
                 android:inputType="text" />
         </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#777" />
 
         <LinearLayout
             android:layout_width="fill_parent"
