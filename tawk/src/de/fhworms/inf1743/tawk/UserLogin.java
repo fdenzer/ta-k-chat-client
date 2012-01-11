@@ -165,8 +165,7 @@ public final class UserLogin extends Activity {
 						.getColumnIndex(filePathColumn[0]));
 				cursor.close();
 
-				userImage.setImageBitmap(getResizedBitmap(
-						BitmapFactory.decodeFile(filePath), 80, 80));
+				//userImage.setImageBitmap(getResizedBitmap(BitmapFactory.decodeFile(filePath), 80, 80));
 				property1.setText(filePath);
 			}
 		default:
