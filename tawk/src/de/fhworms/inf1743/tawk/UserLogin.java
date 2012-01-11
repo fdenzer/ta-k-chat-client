@@ -137,7 +137,7 @@ public final class UserLogin extends Activity {
 	protected void onResume() {
 		if (property1.getText().toString() != "") {
 			try {
-				userImage.setImageBitmap(BitmapFactory.decodeFile(property1.getText().toString()));
+				userImage.setImageBitmap(getResizedBitmap(BitmapFactory.decodeFile(property1.getText().toString()),80,80));
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
